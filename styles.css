@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.head{
+    background-color: #3a3a3a;
+    height: 60px;
+    width: 100%;
+}
+
+#main-body{
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+}
+
+#section1,#section3{
+    flex: 1;
+}
+#section2{
+    max-width: 712px;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    padding-top: 50px;
+    flex: 2;
+}
+
+.date{
+    color: #D3D3D3;
+   }
+
+.heading1{
+    font-size: 38px;
+    color:  #3a3a3a;
+    line-height: 49px;
+}
+
+.heading2{
+    font-size: 18px;
+    color:  #787878;
+    line-height: 32px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.image{
+    padding-top: 20px;
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.names{
+    padding-left: 14px;
+    padding-top: 10px;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+}
+.author{
+    height: 50px;
+    width: 50px;
+}
+
+.editor-name{
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.editor-desig{
+    color: #d3d3d3;
+}
+
+.founders{
+    padding-top: 20px;
+}
+
+.author-pic{
+    width: 712px;
+}
+
+.founder-border{
+ top: -4px;
+ margin-top: -5px;
+ height: 20px;
+ background-color: #3a3a3a; 
+ color: #fff;
+ padding-left: 10px; 
+ width: 712px;  
+}
+
+.para{
+    color: #3a3a3a;
+    font-size: 18px;
+    padding-top: 30px;
+    line-height: 32px;
+    width: 712px;
+}
+
+.bold{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.advertisement{
+    background-color: #fff ;
+    padding-top: 20px;
+    width: 712px;
+}
+
+.add-back{
+   border: #676767 1px solid;
+   text-align: end;
+   height: 36px;
+   padding-top: 8px;
+   padding-right: 10px;
+   color: #cccccc;
+   border-bottom: 0;
+   width: 712px;
+}
+.ad-pic{
+    width: 712px;
+    border: #676767 1px solid;
+    border-bottom: 0px;
+}
+
+.add-content{
+    border: #676767 0.5px solid;
+    margin-top: -4px;
+    padding: 10px;
+}
+.add-content > h2{
+    padding-top: 10px;
+}
+
+.btn{
+ width: 100%;
+ height: 45px;
+ color: #fff;
+ background-color: #FF7800;
+ border: 0;
+}
+
+.flex-item-1{
+    padding: 20px 0 20px 0;
+    width: 712px;
+}
+
+#form-img > div{
+margin-top: 20px;
+height: 400px;
+background-color: #676767;
+display: flex;
+display: -ms-flexbox;
+flex-direction: column;
+}
+
+#form-content{
+    text-align: center;
+    color: #fff;
+    background-color:  #3a3a3a;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.form-pic{
+    margin-top: 55px;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    
+}
+
+#footer{
+    width: 100%;
+    background-color: #F0F0F0;
+    height: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#footer-items{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 712px;
+    padding-top: 20px;
+    flex: auto;
+    margin: 10px;
+}
+
+#footer-items > h2{
+    color: #3a3a3a;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#checkpoint-1 > img{
+    width: 30px;
+    height: 15px;
+}
+#checkpoint-1 > span{
+    color: #3a3a3a;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#footer-items>button{
+  margin-top: 15px;
+}
+
+#date1{display: none;}
+@media only screen and (max-width: 600px) {
+    .head{
+        background-color: #3a3a3a;
+        height: 60px;
+        width: 740px;
+    }
+    #main-body{
+        margin-left: 10px;
+    }
+    #section1,#section2{
+        flex: 1;
+    }
+    #section2{
+        display: flex;
+        display: -ms-flexbox;
+        padding-top: 50px;
+        flex: 2;
+        flex-direction: column;
+    }
+
+    #date{display: none;}
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .founder-top{
+        order: -1;
+    }
+    .heading1,.heading2{
+        text-align: center;
+    }
+    .author, .editor-desig{
+        display: none;
+    }
+    .names{
+        margin-left: 200px;
+    }
+    .add-content{width: inherit;}
+    #form-img > div{
+        width: 100%;
+    }
+    #form-content{width: 100%;}
+    .add-back{text-align: center;}
+}
+
+
